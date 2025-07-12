@@ -1,0 +1,18 @@
+FIR Filter Analysis:
+
+Filter Type: Low-Pass
+Order: 3 (4 taps)
+
+Input: Sample step waveform
+Output: Smoothed version of input (transient removed)
+
+Latency: 4 cycles
+Arithmetic: Multiplier-heavy, suitable for FPGA DSP blocks
+
+Simulation Result:
+- Verified using waveform.vcd in GTKWave
+- Output matches expected convolution results
+
+Conclusion:
+- The filter meets basic smoothing requirements
+- Can be extended to more taps for better roll-off
